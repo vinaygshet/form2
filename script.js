@@ -1,29 +1,18 @@
-//For the given JSON iterate over all for loops (for, for in, for of, forEach)
+var obj1 =  { name: "Person 1", age:5 };
 
-let object=[{
-    "name":"ramu",
-    "age":"25",
-    "city":"Banglore",
-    "state":"Karnataka",
-    "country":"india",
-    "role":"software developer",
-    "company":"Tech soft"
-}]
+var obj2 = { age:5, name: "Person 1" };     
 
-//for loop
+var temp=true;
 
-for(var i=0;i<object.length;i++){
-    console.log(object[i])
+if(Object.keys(obj1).length==Object.keys(obj2).length){
+    for(var x in obj1) 
+        if(obj1[x] == obj2[x]) {
+          continue; 
+        }
+      
 }
-//for in loop
-
-for(var i in object){
-    console.log(object[i])
+else {
+  temp=false;
 }
+console.log(temp)
 
-//for of
-for(var k of object){
-    console.log(k)
-}
-//forEach
-var res=object.forEach((ele)=> console.log(ele))
