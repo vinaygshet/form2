@@ -5,7 +5,7 @@ var obj2 = { age:5, name: "Person 1" };
 var temp=true;
 
 if(Object.keys(obj1).length==Object.keys(obj2).length){
-    for(var x in obj1) 
+    for(x in obj1) 
         if(obj1[x] == obj2[x]) {
           continue; 
         }
