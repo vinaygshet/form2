@@ -7,18 +7,25 @@
     <title>Document</title>
     <script>
         function foo(){
-            alert("value submitted");
+            alert("login successful");
         }
     </script>
 </head>
 <body style="text-align: center;">
-    <h1 style="color:black ;"><b>HTML FORM</b></h1>
-    <h1><strong> input type</strong></h1>
-    <form >
-        <label for="submit">enter the value</label>
-<input type="text">
-<input type="button" id="submit" value="button"  onclick="foo()">
+    <form  onsubmit="foo()">
+
+        <h1 style="color:green"><strong>HTML FORM</strong></h1>
+        <h2><b>using button type ="button"</b></h2>
+        <label for="unme"><b>Enter user name</b> 
+            <input type="text" name="unme" id="unme" placeholder="abc" required>
+        </label><br><br>
+        <label for="psd">Enter password
+            <input type="password" name="psd" id="psd" placeholder="1234" required>
+
+        </label><br><br>
+        <button type="submit" value="button" ><img src="https://www.freeiconspng.com/uploads/green-login-icon-vector-2.jpg" width="35" alt="Green Login Icon vector" /></button>
+        <button type="button" class="cancelbtn">cancel</button>
+        <span class="psd">Forget? <a href="#">password</a></span>
     </form>
-  
 </body>
 </html>
